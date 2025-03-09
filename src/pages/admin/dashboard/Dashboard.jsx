@@ -24,14 +24,14 @@ import {
   MenuSeparator,
 } from "./Dashboard.styled";
 import { GlobeIcon, Menu, Search } from "lucide-react";
-import Card from "../../../components/dashboard/Card";
+import Card from "../../../components/card/Card";
 import { experienceData, inspirationData } from "../../../utils/images";
-import Experiences from "../../../components/dashboard/Experiences";
-import { ExperienceColumns } from "../../../components/dashboard/Experiences.styled";
-import GiftCards from "../../../components/dashboard/GiftCards";
-import HostingQuestions from "../../../components/dashboard/HostingQuestions";
-import FutureGetaways from "../../../components/dashboard/FutureGetaways";
-import FooterSection from "../../../components/dashboard/FooterSection";
+import Experiences from "../../../components/experiences/Experiences";
+import { ExperienceColumns } from "../../../components/experiences/Experiences.styled";
+import GiftCard from "../../../components/giftCard/GiftCard";
+import HostingQuestions from "../../../components/hostingQuestions/HostingQuestions";
+import FutureGetaways from "../../../components/futureGetaways/FutureGetaways";
+import FooterSection from "../../../components/footer/Footer";
 import AuthModal from "../../auth/AuthModal";
 
 const Dashboard = () => {
@@ -159,7 +159,7 @@ const Dashboard = () => {
             <Experiences data={experienceData.home} />
           </ExperienceColumns>
         </DiscoverSection>
-        <GiftCards imageUrl="https://cdn.images.express.co.uk/img/dynamic/25/590x/secondary/Airbnb-3906241.jpg?r=1644406120862" />
+        <GiftCard imageUrl="https://cdn.images.express.co.uk/img/dynamic/25/590x/secondary/Airbnb-3906241.jpg?r=1644406120862" />
         <HostingQuestions backgroundImage="https://images.unsplash.com/photo-1737452072725-0fcbd8133f82?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
         <FutureGetaways />
       </ContentSection>

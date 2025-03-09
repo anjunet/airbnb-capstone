@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Card from '../../../components/Card';
+import Card from '../../../components/Card/Card.styled';
 
 export const DashboardContainer = styled.div`
     min-height: 100vh;
