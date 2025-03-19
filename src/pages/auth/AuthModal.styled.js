@@ -70,33 +70,7 @@ export const WelcomeText = styled.h2`
   color: #222222;
 `
 
-export const CountrySelect = styled.div`
-  border: 1px solid #b0b0b0;
-  border-radius: 8px;
-  padding: 12px;
-  margin-bottom: 16px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-  &:hover {
-    border-color: #222222;
-  }
-`
-
-export const PhoneInput = styled.input`
-  padding: 12px;
-  border: 1px solid #b0b0b0;
-  border-radius: 8px;
-  font-size: 16px;
-  margin-bottom: 8px;
-
-  &:focus {
-    outline: none;
-    border-color: #222222;
-  }
-`
 
 export const HelpText = styled.p`
   font-size: 12px;
@@ -164,3 +138,25 @@ export const SocialButton = styled.button`
     background: #f7f7f7;
   }
 `
+
+export const FormInput = styled.input`
+  width: 95%;
+  padding: 12px;
+  background: white;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+
+  &:focus {
+    border-color: #ff385c;
+    box-shadow: 0 0 4px rgba(255, 56, 92, 0.5);
+  }
+`;

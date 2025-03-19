@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Card from '../../../components/Card/Card.styled';
+import { CardContainer } from '../../../components/card/Card.styled';
 
 export const DashboardContainer = styled.div`
     min-height: 100vh;
@@ -74,7 +74,8 @@ export const HeaderRight = styled.div`
 `
 
 export const Logo = styled.img`
-    height: 2rem;
+    height: 4rem;
+    cursor: pointer;
 `
 
 export const GlobeIcon = styled.button`
@@ -235,7 +236,7 @@ export const InspirationGrid = styled.div`
         display: none;
     }
 
-    ${Card} {
+    ${CardContainer} {
         min-width: 240px;
         flex: 0 0 auto;
         scroll-snap-align: start
